@@ -25,6 +25,6 @@ def config():
 def browser(request):
 	driver = request.param
 	driver = driver()
-	driver.implicitly_wait(10)
+	driver.implicitly_wait(5)
 	yield driver
 	driver.quit()

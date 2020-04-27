@@ -15,4 +15,7 @@ class BasePage():
 	    except NoSuchElementException:
 	        return False
 	    return True
-    
+
+	def get_current_url(self):
+		current_url = self.driver.current_url
+		return current_url
